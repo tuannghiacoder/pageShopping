@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* header */
+.header{
+    width: 90%;
+    margin: auto;
+    height: 250px;
+    position: relative; 
+    
+    
+}
+.content-header{
+    
+   display: flex;
+    margin-top: 25px;
+
+}
+
+.content-header > .logo-header{
+   width: 200px;
+   height: 150px;
+    margin-top: -60px;
+    border-radius: 50%;
+}
+.icon-bar  {
+    font-size: 30px;
+  margin-top: 5px;
+    flex: 1;
+    display: none; 
+    cursor: pointer;
+    position: absolute;
+    right: 2%;
+}
+
+
+.menu-list-header{
+    
+    list-style: none;
+    display: flex;
+  margin-left: 150px;   
+
+}
+.menu-list-header a{
+    color: #232323;
+    text-decoration: none;
+    padding: 0px 70px 0px 90px;
+  
+}
+.content-header > .menu-list-header a:hover{
+    color: #dd3d0c;
+}
+.icon-bar {
+    font-size: 30px;
+   margin-right: 40px;
+    
+    /* display: none; */
+}
+
+
+/* body */
+.bodyy{
+    width: 90%;
+    height:550px;
+    margin: auto;
+}
+.content-bodyy{
+ display: flex;
+align-items: center;
+  margin-top: -70px;
+}
+.content-bodyy-nav{
+    width: 100%;
+    
+}
+.title-bodyy{
+    font-size: 34px;
+    font-style: bold;
+    margin-bottom: 14px;
+
+}
+.text-bodyy{
+    font-size: 14px;
+
+
+}
+.icon-btn{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #c36cbb;
+    background: transparent;
+    cursor: pointer;
+}
+.icon-noteSP i{
+    /* text-decoration: none; */
+    font-size: 20px;
+    color:#c36cbb;
+}
+.icon-btn > i{
+    font-size: 20px;
+    color: #c36cbb;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    background-color:#c36cbb;
+    margin-left: 30px;
+    margin-top: 50px;
+    cursor: pointer;
+    
+}
+.btn a{
+    text-decoration: none;
+    color: #232323;
+    font-size: 15px;
+}
+
+.btn > i{
+    font-size: 20px;
+}
+.btn > a{
+    color: #232323;
+    font-style: bold;
+    
+}
+.img-bodyy{
+    flex: 3;
+    width: 700px;
+    height: 600px;
+  
+
+}
+.icon-footer{
+    display: none;
+    margin-bottom: 60px;
+}
+.icon-list{
+    
+}
+
+/* modal chú thích sản phẫm */
+.modal-info{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  display: none;
+  
+}
+.modal-info-content{
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid  #888;
+
+}
+.modal-info-close > i{
+    float: right;
+    font-size: 20px;
+        
+}
+.modal-info-close > i:hover{
+    color: orangered;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+/* banner backgorund */
+.img-banner1{
+    opacity: 0.2;
+    height: 60%;
+    z-index: -1;
+position: absolute;
+top:0;
+right: 0;
+
+}
+.img-banner2{
+    opacity: 0.4;
+   top:30%;
+   right: 30%;
+    position: absolute;
+    z-index: -1;
+    height: 50%;
+
+}
+.img-banner3{
+    position: absolute;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+    opacity: 0.8;
+}
+/* background banner left */
+.img-banner4{
+    opacity: 0.5;
+    height: 60%;
+    z-index: -1;
+     position: absolute;
+     top:0;
+     left: 0;
+
+}
+.img-banner5{
+    opacity: 0.1;
+   top:30%;
+   left: 30%;
+    position: absolute;
+    z-index: -1;
+    height: 50%;
+
+}
+.img-banner6{
+    position: absolute;
+    right: 20%;
+    bottom: 0%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+}
+/* reponsive thay đổi kích thước phù hợp với từng thiết bị */
+@media  screen and (max-width:767px){
+    
+  .icon-bar{
+    display: block;
+   margin-right: 30px;
+   float: right;
+  }
+  .logo-header{
+   margin: 20px 0px 0px 0px;
+     
+  }
+  .menu-list-header{
+   flex-direction: column;
+   position: absolute;
+ right: -5%;
+  display: none;
+  
+  top:100px;
+  }
+ .menu-list-header li {
+    padding-bottom: 30px;
+ }
+
+ .content-bodyy{
+    flex-direction: column;
+    margin-left: 80px;
+    
+    
+ }
+ /* xữu lý cho từng các nội dung con bên trong body */
+ .title-bodyy{
+    margin-top: -40px;
+    margin-right: 10px;
+ }
+ .text-bodyy{
+    margin-top: 10px;
+ }
+.menu-btn{
+    margin-top: 40px;
+    
+}
+ 
+ .content-bodyy-nav{
+    width: 100%;
+   
+    margin-top: 150px;
+ }
+ 
+ .menu-btn{
+    width: 100%;
+ }
+ .icon-btn{
+    margin-left: 80px;
+ }
+ .img-bodyy{
+    margin-top:10px;
+    width: 100%;
+    margin-right: 50px;
+ }
+ .icon-btn{
+    display: none;
+ }
+ .btn{
+    margin-top: -20px;
+ }
+ .icon-footer{
+    margin-top: 70px;
+    text-align: center;
+   display: block;
+   width: 100%;
+   padding: 20px 0px 5px 10px;
+    font-size: 20px;
+    color: #232323;
+ }
+ .icon-footer1 > i{
+    color: #232323;
+    padding: 30px;
+ }
+.icon-footer1 > i:hover{
+    color: orangered;
+    transition: all 0.5s;
+    transform:scale(1.2 , 1.2);
+}
+
+  .icon-list i{
+    display: none;
+    
+  }
+ 
+}
+   /*xữ lý footer cho pageShopping  */
+   .icon-list{
+    text-align: center;
+    
+   }
+   .icon-list i{
+    padding: 20px;
+    font-size: 25px;
+   }
+   .icon-list i:hover{
+    color: orangered;
+    
+   }
+   /* tạo các thẻ link chứa các nội dung footer */
+.icon-fb , .icon-gg , .icon-tt {
+    color: #232323;
+}
+.icon-fb > i:hover{
+    color: orangered;
+    transition: all 0.5s;
+    transform: scale(2,2);
+
+}
+.icon-gg > i:hover{ color: orangered;
+    transition: all 0.5s;
+    transform: scale(2,2);
+}
+.icon-tt > i:hover{
+    color: orangered;
+    transition: all 0.5s;
+    transform: scale(2,2);
+
+}
+.icon-githup{
+    color: #232323;
+
+
+}
+.icon-githup > i:hover{
+    color: orangered;
+    transition: all 0.5s;
+    transform: scale(2,2);
+
+}
+
